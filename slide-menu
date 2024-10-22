@@ -216,9 +216,6 @@
         width: 18px;
         height: 18px;
         border-radius: 50%;
-        background: #999
-          url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=CYfUaCPKDZkbFewB3OjoAA&amp;portalId=P1)
-          no-repeat 4px 50%;
         background-size: 10px;
       }
       .content-service-view .sub-tit:first-child,
@@ -244,8 +241,6 @@
         font-size: 15px;
         font-weight: 500;
         color: #000;
-        background: url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=81CJtgOoS8EBzjcpk4oCvA&amp;portalId=P1)
-          no-repeat 0 5px;
         background-size: 16px;
       }
       .content-service-view .info-desc {
@@ -360,11 +355,7 @@
         text-indent: -5000px;
         margin-right: 2px;
         vertical-align: -2px;
-        background-image: url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=e6Br68S0ipa4zVZ3ZhqQ&amp;portalId=P1);
         background-size: 100%;
-      }
-      .content-service-view .icon-down {
-        background-image: url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=cSrRVKKz6eHJNHzIRgzWA&amp;portalId=P1);
       }
       .content-service-view [class^="btn0"] {
         display: inline-block;
@@ -471,9 +462,6 @@
         position: relative;
         height: 168px;
         margin-right: 175px;
-        background: #e9ecf1
-          url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=1LKxgclhHWvKxN7aMUkPyg&portalId=P1)
-          no-repeat 0 50%;
         background-size: contain;
       }
       .content-service-view .img-banner .pc a {
@@ -491,8 +479,6 @@
         margin-top: -10px;
         padding-left: 20px;
         color: #999;
-        background: url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=Xw5rvb0UTyjfo1LwHfIJ7w&amp;portalId=P1)
-          no-repeat 0 5px;
         background-size: 15px;
       }
       .content-service-view .link-list {
@@ -639,8 +625,6 @@
         transform: translateY(-50%);
         width: 18px;
         height: 18px;
-        background: url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=jshf2Dvz8OwZtdDkvsixcg&portalId=P1)
-          no-repeat center;
         background-size: 100%;
       }
       .content-service-view .error-sound-box .error-item .error-pop {
@@ -689,8 +673,6 @@
         width: 24px;
         height: 24px;
         padding: 0;
-        background: url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=2cImOgY7d5sL48IwdSCCg&portalId=P1)
-          no-repeat center;
         background-size: 100%;
         border: 0;
       }
@@ -742,8 +724,6 @@
       .content-service-view .collapse-box .collapse-btn .arrow {
         width: 18px;
         height: 18px;
-        background: url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=8V9sDVh4TFZtZNBfM3lsQ&portalId=P1)
-          no-repeat 4px 50%;
         background-size: 10px;
       }
       .content-service-view .collapse-box .arrow.rotate {
@@ -1568,8 +1548,6 @@
         width: 20px;
         height: 20px;
         padding: 0;
-        background: url(https://gscs.lge.com:/gscs/support/fileupload/downloadFile.do?fileId=x8m2oVyPZQFsbHfsE1SAQ&portalId=P1)
-          no-repeat center 100%;
         border: 0;
       }
       .code-modal .modal-dialog .modal-content .modal-header .close:hover,
