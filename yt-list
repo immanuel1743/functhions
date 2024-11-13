@@ -2030,43 +2030,6 @@
       countVideos(1);
       activate(vCons[0]);
 
-      (() => {
-        const csYtPlayer = qs("#csYtPlayer");
-        const ytButtonContainer = qs("#ytButtonContainer");
-
-        const seekTo = (time) => {
-          const message = (func, args) =>
-            JSON.stringify({
-              event: "command",
-              func,
-              args,
-              id: 0,
-              sender: "player0",
-            });
-
-          csYtPlayer.contentWindow.postMessage(
-            message("seekTo", [time, "true"]),
-            "*"
-          );
-          csYtPlayer.contentWindow.postMessage(message("playVideo", ""), "*");
-        };
-
-        ytButtonContainer.addEventListener("click", (event) => {
-          const subPlayer = qs("#subPlayer");
-          const csYtPlayer = qs("#csYtPlayer");
-
-          subPlayer.src = "";
-          activate(vCons[0]);
-          subPlayer.style.display = "none";
-          csYtPlayer.style.display = "block";
-          event.preventDefault();
-
-          if (event.target.classList.contains("link-txt")) {
-            seekTo(event.target.dataset.ytTime);
-          }
-        });
-      })();
-
       vCons.forEach((element) => {
         element.setAttribute("onclick", "activate(this)");
         element.setAttribute("onkeypress", "activate(this)");
