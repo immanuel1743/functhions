@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>dataFormBot</title>
+</head>
+<body>
+<textarea
+name="modelList"
+id="modelList"
+style="width: 500px; height: 500px; resize: none"
+></textarea>
+<button id="processButton" onclick="dataListToJson()">
+Process Data List
+</button>
+<p>Result:</p>
+<input
+id="inputData"
+style="width: 500px; border: 2px solid; word-break: break-all"
+/>
+<button id="copybtn" onclick="copyList()">copy</button>
+<script type="text/javascript" defer>
+var modelListInput = document.getElementById("modelList");
+var resultOutput = document.getElementById("inputData");
+
+function dataListToJson() {
+var inputData = document.getElementById("modelList").value,
+dataArray = inputData.split("\n").map(function (item) {
+return item.trim();
+});
+
+var jsonData = dataArray.map(function (item) {
+return "'" + item;
+});
+
+var toJason = jsonData.map((item) => {
+let [prefix] = item.split(".");
+return `${prefix}'`;
+});
+
+dataList = toJason;
+
+document.getElementById("inputData").value = dataList;
+}
+
+function copyList() {
+var inputData = document.getElementById("inputData");
+inputData.select();
+inputData.setSelectionRange(0, 99999);
+navigator.clipboard
+.writeText(inputData.value)
+.then(() => {
+alert("Copied successfully!");
+})
+.catch((err) => {
+alert("Failed to copy: " + err);
+});
+}
+</script>
+</body>
+</html>
+
+<!--
+J1234-PFS.ASX
+K5678-T1.AT1
+M1234T-SFS.AKRMQP
+N9876S-SFQ.AKRGEF
+P3456D-NF.AKRLLHX
+Q7890C-UK.AUKX
+R2345S-SFQ.APCOQP
+S4567H-SFQ.APCOQF
+T1234-AL
+U5678C-UK.AUKX
+V9876P-CGSPLGE
+W2345A-AWYAHCI
+X7890M-AOWPEIL
+Y1234R-ATRHLLP
+Z5678-AA2ALLS
+A1234-UJ1
+B5678-AT1
+C9876T-SFS.AKRMQP
+D2345S-SFQ.AKRGEF
+E7890D-NF.AKRLLHX
+F1234C-UK.AUKX
+G5678S-SFQ.APCOQP
+H9876H-SFQ.APCOQF
+I2345-AL
+J7890C-UK.AUKX
+K1234P-CGSPLGE
+L5678A-AWYAHCI
+M2345N-AOWPEIL
+N7890R-ATRHLLP
+O1234-AA2ALLS
+P5678-UJ1
+Q2345-AT1
+R7890T-SFS.AKRMQP
+S1234S-SFQ.AKRGEF
+T5678D-NF.AKRLLHX
+U9876C-UK.AUKX
+V2345S-SFQ.APCOQP
+W1234H-SFQ.APCOQF
+X5678-AL
+Y7890C-UK.AUKX
+Z2345P-CGSPLGE
+A2345A-AWYAHCI
+B7890M-AOWPEIL
+C1234R-ATRHLLP
+D5678-AA2ALLS
+E2345-UJ1
+F7890-AT1
+G1234T-SFS
+-->
